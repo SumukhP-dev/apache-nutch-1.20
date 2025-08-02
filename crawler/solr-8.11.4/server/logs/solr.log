@@ -1,0 +1,851 @@
+2025-05-22 09:52:23.078 INFO  (main) [   ] o.e.j.u.log Logging initialized @463ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-05-22 09:52:23.222 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21.0.7+6-Ubuntu-0ubuntu124.04
+2025-05-22 09:52:23.230 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/sumukh-paspuleti/solr-8.11.4/server/contexts/] at interval 0
+2025-05-22 09:52:23.379 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-05-22 09:52:23.385 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2025-05-22 09:52:23.385 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2025-05-22 09:52:23.386 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2025-05-22 09:52:23.409 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-05-22 09:52:23.411 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
+2025-05-22 09:52:23.411 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-05-22 09:52:23.411 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/sumukh-paspuleti/solr-8.11.4
+2025-05-22 09:52:23.412 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-05-22T09:52:23.412001874Z
+2025-05-22 09:52:23.418 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /home/sumukh-paspuleti/solr-8.11.4/server/solr
+2025-05-22 09:52:23.418 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/sumukh-paspuleti/solr-8.11.4/server/solr/solr.xml
+2025-05-22 09:52:23.456 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5f8e8a9d, but no JMX reporters were configured - adding default JMX reporter.
+2025-05-22 09:52:23.750 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2025-05-22 09:52:23.822 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@312b34e3[provider=null,keyStore=null,trustStore=null]
+2025-05-22 09:52:23.823 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@312b34e3[provider=null,keyStore=null,trustStore=null]
+2025-05-22 09:52:23.885 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@44b29496[provider=null,keyStore=null,trustStore=null]
+2025-05-22 09:52:23.885 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@44b29496[provider=null,keyStore=null,trustStore=null]
+2025-05-22 09:52:23.901 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-05-22 09:52:23.961 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2025-05-22 09:52:23.965 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2025-05-22 09:52:23.999 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f8e8a9d
+2025-05-22 09:52:24.000 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f8e8a9d
+2025-05-22 09:52:24.001 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f8e8a9d
+2025-05-22 09:52:24.014 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/sumukh-paspuleti/solr-8.11.4/server/solr
+2025-05-22 09:52:24.046 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e4efc1b{/solr,file:///home/sumukh-paspuleti/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{/home/sumukh-paspuleti/solr-8.11.4/server/solr-webapp/webapp}
+2025-05-22 09:52:24.052 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@f0e995e{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-05-22 09:52:24.053 INFO  (main) [   ] o.e.j.s.Server Started @1439ms
+2025-05-22 09:52:55.748 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 09:52:56.223 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907576137&wt=json)
+2025-05-22 09:52:56.223 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907576136&indexInfo=false&wt=json)
+2025-05-22 09:52:56.238 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907576136} status=0 QTime=15
+2025-05-22 09:52:56.252 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907576137} status=0 QTime=29
+2025-05-22 09:52:56.258 INFO  (qtp224591451-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907576137&wt=json)
+2025-05-22 09:52:56.262 INFO  (qtp224591451-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907576137} status=0 QTime=4
+2025-05-22 09:53:11.666 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-05-22 09:53:11.669 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=3
+2025-05-22 09:53:11.680 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-05-22 09:53:11.686 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=6
+2025-05-22 09:53:11.691 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?action=STATUS&core=nutch&wt=json)
+2025-05-22 09:53:11.693 INFO  (qtp224591451-36) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=STATUS&wt=json} status=0 QTime=0
+2025-05-22 09:53:11.701 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?action=CREATE&name=nutch&instanceDir=nutch&wt=json)
+2025-05-22 09:53:11.702 INFO  (qtp224591451-61) [   x:nutch] o.a.s.h.a.CoreAdminOperation core create command name=nutch&action=CREATE&instanceDir=nutch&wt=json
+2025-05-22 09:53:11.715 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-05-22 09:53:11.727 WARN  (qtp224591451-61) [   x:nutch] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-05-22 09:53:11.748 INFO  (qtp224591451-61) [   x:nutch] o.a.s.s.IndexSchema Schema name=default-config
+2025-05-22 09:53:11.907 INFO  (qtp224591451-61) [   x:nutch] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-05-22 09:53:11.922 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch, trusted=true
+2025-05-22 09:53:11.930 INFO  (qtp224591451-61) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f8e8a9d
+2025-05-22 09:53:11.937 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch], dataDir=[/home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/data/]
+2025-05-22 09:53:12.360 INFO  (qtp224591451-61) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-05-22 09:53:12.360 INFO  (qtp224591451-61) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-05-22 09:53:12.368 INFO  (qtp224591451-61) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-05-22 09:53:12.369 INFO  (qtp224591451-61) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-05-22 09:53:12.412 INFO  (qtp224591451-61) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/conf
+2025-05-22 09:53:12.421 INFO  (qtp224591451-61) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-05-22 09:53:12.426 INFO  (qtp224591451-61) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2025-05-22 09:53:12.435 INFO  (qtp224591451-61) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-05-22 09:53:12.439 INFO  (qtp224591451-61) [   x:nutch] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1832813951649316864
+2025-05-22 09:53:12.442 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-05-22 09:53:12.442 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-05-22 09:53:12.443 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=nutch&action=CREATE&instanceDir=nutch&wt=json} status=0 QTime=741
+2025-05-22 09:53:12.451 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch]  Registered new searcher autowarm time: 0 ms
+2025-05-22 09:56:57.877 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 09:56:58.054 INFO  (qtp224591451-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 09:56:58.054 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 09:56:58.055 INFO  (qtp224591451-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 09:56:58.064 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=9
+2025-05-22 09:56:58.075 INFO  (qtp224591451-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 09:56:58.083 INFO  (qtp224591451-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=8
+2025-05-22 10:03:59.132 INFO  (qtp224591451-70) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/?null)
+2025-05-22 10:04:10.013 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:10.014 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:10.016 INFO  (qtp224591451-70) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908250008&numTerms=0&show=index&wt=json)
+2025-05-22 10:04:10.016 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:10.016 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908250009&command=details&wt=json)
+2025-05-22 10:04:10.017 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747908250008&wt=json)
+2025-05-22 10:04:10.017 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747907818010&action=status&ts=1747907818010&wt=json)
+2025-05-22 10:04:10.020 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747907818010&ts=1747907818010} status=503 QTime=2
+2025-05-22 10:04:10.021 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908250009} status=0 QTime=5
+2025-05-22 10:04:10.025 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=9
+2025-05-22 10:04:10.025 INFO  (qtp224591451-42) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747908250008} status=0 QTime=8
+2025-05-22 10:04:10.025 INFO  (qtp224591451-70) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747908250008} status=0 QTime=9
+2025-05-22 10:04:16.888 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&wt=json)
+2025-05-22 10:04:16.888 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:16.888 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:16.888 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:16.888 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908256885} status=0 QTime=0
+2025-05-22 10:04:16.893 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&file=lang&wt=json)
+2025-05-22 10:04:16.894 INFO  (qtp224591451-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908256885} status=0 QTime=1
+2025-05-22 10:04:16.895 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=7
+2025-05-22 10:04:21.081 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:21.081 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:21.081 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:21.086 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:23.502 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:23.502 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:23.502 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908250008&show=schema&wt=json)
+2025-05-22 10:04:23.502 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:23.506 INFO  (qtp224591451-42) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908250008} status=0 QTime=4
+2025-05-22 10:04:23.507 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:24.958 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:24.959 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:24.962 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&wt=json)
+2025-05-22 10:04:24.962 INFO  (qtp224591451-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908256885} status=0 QTime=0
+2025-05-22 10:04:24.963 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:24.971 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=7
+2025-05-22 10:04:24.972 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&file=lang&wt=json)
+2025-05-22 10:04:24.973 INFO  (qtp224591451-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908256885} status=0 QTime=1
+2025-05-22 10:04:27.133 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:27.133 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:27.135 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:27.135 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&wt=json)
+2025-05-22 10:04:27.135 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&contentType=text%2Fplain;charset%3Dutf-8&file=lang%2Fcontractions_ca.txt&wt=json)
+2025-05-22 10:04:27.136 INFO  (qtp224591451-42) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908256885} status=0 QTime=0
+2025-05-22 10:04:27.136 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang/contractions_ca.txt&contentType=text/plain;charset%3Dutf-8&wt=json&_=1747908256885} status=0 QTime=1
+2025-05-22 10:04:27.140 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:27.149 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&file=lang&wt=json)
+2025-05-22 10:04:27.150 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908256885} status=0 QTime=1
+2025-05-22 10:04:29.388 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:29.389 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:29.389 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:29.389 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&wt=json)
+2025-05-22 10:04:29.390 INFO  (qtp224591451-62) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908256885} status=0 QTime=0
+2025-05-22 10:04:29.394 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=4
+2025-05-22 10:04:29.400 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&file=lang&wt=json)
+2025-05-22 10:04:29.401 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908256885} status=0 QTime=1
+2025-05-22 10:04:34.050 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:34.050 INFO  (qtp224591451-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:34.052 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908250008&numTerms=0&show=index&wt=json)
+2025-05-22 10:04:34.052 INFO  (qtp224591451-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747908250008&wt=json)
+2025-05-22 10:04:34.052 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908250009&command=details&wt=json)
+2025-05-22 10:04:34.052 INFO  (qtp224591451-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747907818010&action=status&ts=1747907818010&wt=json)
+2025-05-22 10:04:34.052 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:34.052 INFO  (qtp224591451-33) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747907818010&ts=1747907818010} status=503 QTime=0
+2025-05-22 10:04:34.052 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747908250008} status=0 QTime=0
+2025-05-22 10:04:34.052 INFO  (qtp224591451-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908250009} status=0 QTime=0
+2025-05-22 10:04:34.056 INFO  (qtp224591451-34) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747908250008} status=0 QTime=4
+2025-05-22 10:04:34.057 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:36.974 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:36.974 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908250008&show=schema&wt=json)
+2025-05-22 10:04:36.974 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:36.974 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:36.975 INFO  (qtp224591451-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908250008} status=0 QTime=1
+2025-05-22 10:04:36.979 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:37.805 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747908277802&cat=QUERY&wt=json)
+2025-05-22 10:04:37.805 INFO  (qtp224591451-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:37.805 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:37.806 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:37.806 INFO  (qtp224591451-42) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747908277802} status=0 QTime=0
+2025-05-22 10:04:37.811 INFO  (qtp224591451-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:37.833 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:37.834 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:37.837 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:37.837 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747908277802&cat=QUERY&wt=json)
+2025-05-22 10:04:37.837 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/undefined?_=1747908277802&command=show-config&indent=on&wt=json)
+2025-05-22 10:04:37.838 INFO  (qtp224591451-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747908277802} status=0 QTime=0
+2025-05-22 10:04:37.843 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:38.642 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:38.642 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:38.645 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908250008&show=schema&wt=json)
+2025-05-22 10:04:38.645 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:38.646 INFO  (qtp224591451-42) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908250008} status=0 QTime=1
+2025-05-22 10:04:38.650 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:39.261 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747907818010&ts=1747907818010&wt=json)
+2025-05-22 10:04:39.275 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747907818010&ts=1747907818010} hits=0 status=0 QTime=13
+2025-05-22 10:04:39.275 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747907818010&ts=1747907818010} status=0 QTime=13
+2025-05-22 10:04:40.332 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:40.332 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:40.334 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:40.334 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&wt=json)
+2025-05-22 10:04:40.335 INFO  (qtp224591451-62) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908256885} status=0 QTime=0
+2025-05-22 10:04:40.338 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=3
+2025-05-22 10:04:40.342 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908256885&file=lang&wt=json)
+2025-05-22 10:04:40.343 INFO  (qtp224591451-42) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908256885} status=0 QTime=1
+2025-05-22 10:04:41.124 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747908277802&stats=true&wt=json)
+2025-05-22 10:04:41.124 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:41.124 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:41.124 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:41.133 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1747908277802} status=0 QTime=8
+2025-05-22 10:04:41.133 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=8
+2025-05-22 10:04:41.940 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:41.940 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:41.940 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=0
+2025-05-22 10:04:41.945 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=5
+2025-05-22 10:04:43.320 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747907818010&indexInfo=false&wt=json)
+2025-05-22 10:04:43.321 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747907818010} status=0 QTime=1
+2025-05-22 10:04:43.324 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747907818010&wt=json)
+2025-05-22 10:04:43.324 INFO  (qtp224591451-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747908250008&wt=json)
+2025-05-22 10:04:43.324 INFO  (qtp224591451-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908250009&command=details&wt=json)
+2025-05-22 10:04:43.324 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747907818010&action=status&ts=1747907818010&wt=json)
+2025-05-22 10:04:43.324 INFO  (qtp224591451-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908250008&numTerms=0&show=index&wt=json)
+2025-05-22 10:04:43.325 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747907818010&ts=1747907818010} status=503 QTime=0
+2025-05-22 10:04:43.325 INFO  (qtp224591451-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747908250008} status=0 QTime=0
+2025-05-22 10:04:43.325 INFO  (qtp224591451-34) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908250009} status=0 QTime=0
+2025-05-22 10:04:43.327 INFO  (qtp224591451-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747907818010} status=0 QTime=3
+2025-05-22 10:04:43.327 INFO  (qtp224591451-33) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747908250008} status=0 QTime=3
+2025-05-22 10:13:21.238 INFO  (qtp224591451-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?wt=javabin&version=2)
+2025-05-22 10:13:21.342 INFO  (qtp224591451-34) [   x:nutch] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/conf/managed-schema
+2025-05-22 10:13:21.488 INFO  (qtp224591451-34) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://calendar.gatech.edu/ (1832815219293814784), https://comm.gatech.edu/ (1832815219330514944), https://cse.gatech.edu/ (1832815219333660672), https://gatech.co1.qualtrics.com/jfe/form/SV_aWerVD7pE52wPSS (1832815219335757824), https://greenbuzz.gatech.edu/ (1832815219335757825), https://ic.gatech.edu/ (1832815219337854976), https://news.gatech.edu/ (1832815219339952128), https://pe.gatech.edu/global-learning-center (1832815219342049280), https://sci.cc.gatech.edu/ (1832815219346243584), https://scp.cc.gatech.edu/ (1832815219348340736), ... (67 adds)]} 0 250
+2025-05-22 10:13:21.500 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 10:13:21.728 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-05-22 10:13:21.735 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch]  Registered new searcher autowarm time: 2 ms
+2025-05-22 10:13:21.739 INFO  (qtp224591451-57) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 239
+2025-05-22 10:13:21.741 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 10:13:21.742 INFO  (qtp224591451-36) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 0
+2025-05-22 10:13:43.878 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 10:13:44.226 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:13:44.226 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:13:44.228 INFO  (qtp224591451-72) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:13:44.228 INFO  (qtp224591451-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&numTerms=0&show=index&wt=json)
+2025-05-22 10:13:44.228 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:13:44.230 INFO  (qtp224591451-72) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=1
+2025-05-22 10:13:44.230 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747908824217&wt=json)
+2025-05-22 10:13:44.230 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747908824164&action=status&ts=1747908824164&wt=json)
+2025-05-22 10:13:44.231 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747908824164&ts=1747908824164} status=503 QTime=0
+2025-05-22 10:13:44.231 INFO  (qtp224591451-34) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747908824217} status=0 QTime=2
+2025-05-22 10:13:44.241 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=13
+2025-05-22 10:13:44.242 INFO  (qtp224591451-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747908824217} status=0 QTime=11
+2025-05-22 10:13:52.052 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&wt=json)
+2025-05-22 10:13:52.052 INFO  (qtp224591451-60) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:13:52.052 INFO  (qtp224591451-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:13:52.052 INFO  (qtp224591451-57) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908832048} status=0 QTime=0
+2025-05-22 10:13:52.053 INFO  (qtp224591451-70) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:13:52.058 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&file=lang&wt=json)
+2025-05-22 10:13:52.059 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908832048} status=0 QTime=1
+2025-05-22 10:13:52.059 INFO  (qtp224591451-70) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=7
+2025-05-22 10:13:53.698 INFO  (qtp224591451-60) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:13:53.698 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:13:53.699 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:13:53.703 INFO  (qtp224591451-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:13:55.827 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:13:55.829 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=67 status=0 QTime=2
+2025-05-22 10:13:55.869 INFO  (qtp224591451-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:13:55.869 INFO  (qtp224591451-60) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:13:55.869 INFO  (qtp224591451-70) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:13:55.869 INFO  (qtp224591451-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:13:55.870 INFO  (qtp224591451-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=67 status=0 QTime=1
+2025-05-22 10:13:55.875 INFO  (qtp224591451-70) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=6
+2025-05-22 10:37:09.781 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:37:09.782 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=67 status=0 QTime=0
+2025-05-22 10:40:40.266 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?wt=javabin&version=2)
+2025-05-22 10:40:40.274 INFO  (qtp224591451-57) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://nutch.apache.org/ (1832816937813409792)]} 0 7
+2025-05-22 10:40:40.291 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 10:40:40.445 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-05-22 10:40:40.448 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch]  Registered new searcher autowarm time: 0 ms
+2025-05-22 10:40:40.449 INFO  (qtp224591451-74) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 158
+2025-05-22 10:40:40.451 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 10:40:40.452 INFO  (qtp224591451-57) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 0
+2025-05-22 10:44:04.274 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:04.274 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:44:05.791 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:05.792 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:44:05.974 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:05.975 INFO  (qtp224591451-74) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:44:06.151 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:06.152 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:44:10.809 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:10.810 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:10.811 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:10.817 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=6
+2025-05-22 10:44:14.634 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:14.634 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:44:14.661 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:14.662 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:14.665 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:14.665 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:14.668 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=2
+2025-05-22 10:44:14.673 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=8
+2025-05-22 10:44:22.662 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:22.663 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:22.663 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:22.665 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&wt=json)
+2025-05-22 10:44:22.665 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908832048} status=0 QTime=0
+2025-05-22 10:44:22.666 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=3
+2025-05-22 10:44:22.675 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&file=lang&wt=json)
+2025-05-22 10:44:22.677 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908832048} status=0 QTime=2
+2025-05-22 10:44:23.853 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:44:23.853 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:23.853 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:23.854 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:23.854 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:44:23.858 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:24.870 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:24.870 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:24.870 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:44:24.870 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:24.871 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:44:24.875 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:24.894 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:24.895 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:24.897 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:24.897 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:44:24.898 INFO  (qtp224591451-74) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=1
+2025-05-22 10:44:24.899 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/undefined?_=1747910664867&command=show-config&indent=on&wt=json)
+2025-05-22 10:44:24.901 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:44:25.799 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:25.799 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:44:25.799 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:25.799 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:25.801 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:44:25.802 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=2
+2025-05-22 10:44:26.905 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:26.905 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:26.909 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:44:26.909 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&numTerms=0&show=index&wt=json)
+2025-05-22 10:44:26.909 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747908824217&wt=json)
+2025-05-22 10:44:26.909 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747908824164&action=status&ts=1747908824164&wt=json)
+2025-05-22 10:44:26.909 INFO  (qtp224591451-42) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747908824164&ts=1747908824164} status=503 QTime=0
+2025-05-22 10:44:26.909 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747908824217} status=0 QTime=0
+2025-05-22 10:44:26.909 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:26.909 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=0
+2025-05-22 10:44:26.915 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747908824217} status=0 QTime=6
+2025-05-22 10:44:26.915 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:32.290 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:32.291 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:32.294 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:32.294 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:44:32.295 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:44:32.297 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=3
+2025-05-22 10:44:34.784 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:34.785 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:34.786 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:34.786 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:44:34.786 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:44:34.791 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:34.802 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:34.802 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:34.803 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/undefined?_=1747910664867&command=show-config&indent=on&wt=json)
+2025-05-22 10:44:34.803 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:44:34.803 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:34.804 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=1
+2025-05-22 10:44:34.812 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=9
+2025-05-22 10:44:35.700 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:35.700 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:35.703 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:35.703 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:44:35.704 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:44:35.708 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:37.747 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:37.747 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:44:37.747 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:37.747 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:37.747 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=0
+2025-05-22 10:44:37.752 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:38.392 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:38.392 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:38.394 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:38.400 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:39.047 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:39.047 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:39.050 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:39.050 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:44:39.051 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=1
+2025-05-22 10:44:39.057 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=7
+2025-05-22 10:44:43.166 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/config?_=1747910683162&wt=json)
+2025-05-22 10:44:43.166 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:44:43.166 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:43.166 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:43.167 INFO  (qtp224591451-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:43.168 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:44:43.168 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/config params={wt=json&_=1747910683162} status=0 QTime=2
+2025-05-22 10:44:43.172 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=6
+2025-05-22 10:44:43.186 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&numTerms=0&wt=json)
+2025-05-22 10:44:43.193 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1747908824217} status=0 QTime=7
+2025-05-22 10:44:44.262 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:44.262 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/segments?_=1747910684260&wt=json)
+2025-05-22 10:44:44.262 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:44.262 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:44.265 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/segments params={wt=json&_=1747910684260} status=0 QTime=3
+2025-05-22 10:44:44.267 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:45.792 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&stats=true&wt=json)
+2025-05-22 10:44:45.792 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:45.792 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:45.793 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:45.795 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=2
+2025-05-22 10:44:45.796 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1747910664866} status=0 QTime=3
+2025-05-22 10:44:48.218 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:48.218 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:48.219 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:48.221 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=2
+2025-05-22 10:44:49.920 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:49.920 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:44:49.956 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:44:49.956 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:49.956 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:49.957 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:49.957 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:44:49.963 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=6
+2025-05-22 10:44:56.136 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:56.136 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:56.143 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&stats=true&wt=json)
+2025-05-22 10:44:56.143 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:56.146 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1747910664866} status=0 QTime=3
+2025-05-22 10:44:56.148 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:58.602 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747908824164&ts=1747908824164&wt=json)
+2025-05-22 10:44:58.603 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747908824164&ts=1747908824164} hits=68 status=0 QTime=0
+2025-05-22 10:44:58.603 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747908824164&ts=1747908824164} status=0 QTime=0
+2025-05-22 10:44:59.441 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:44:59.441 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:44:59.444 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:44:59.444 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&wt=json)
+2025-05-22 10:44:59.445 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908832048} status=0 QTime=0
+2025-05-22 10:44:59.450 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:44:59.458 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&file=lang&wt=json)
+2025-05-22 10:44:59.459 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908832048} status=0 QTime=1
+2025-05-22 10:45:00.441 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:45:00.442 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=1
+2025-05-22 10:45:00.443 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:45:00.443 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:45:00.444 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:45:00.447 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:45:01.141 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:45:01.141 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:45:01.142 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:45:01.143 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:45:01.144 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:45:01.147 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:45:01.158 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:45:01.158 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:45:01.158 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/undefined?_=1747910664867&command=show-config&indent=on&wt=json)
+2025-05-22 10:45:01.158 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:45:01.158 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:45:01.159 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:45:01.162 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=3
+2025-05-22 10:45:02.084 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:45:02.085 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:45:02.088 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:45:02.088 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:45:02.089 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:45:02.090 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=2
+2025-05-22 10:45:04.234 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:45:04.235 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:45:04.238 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747908824164&action=status&ts=1747908824164&wt=json)
+2025-05-22 10:45:04.238 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:45:04.238 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&numTerms=0&show=index&wt=json)
+2025-05-22 10:45:04.238 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747908824217&wt=json)
+2025-05-22 10:45:04.238 INFO  (qtp224591451-82) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747908824164&ts=1747908824164} status=503 QTime=0
+2025-05-22 10:45:04.238 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747908824217} status=0 QTime=0
+2025-05-22 10:45:04.238 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:45:04.239 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=0
+2025-05-22 10:45:04.243 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:45:04.243 INFO  (qtp224591451-57) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747908824217} status=0 QTime=5
+2025-05-22 10:46:17.629 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:17.629 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:17.632 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:46:17.632 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:17.633 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:46:17.637 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:46:18.881 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:18.882 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:18.884 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:46:18.884 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:18.885 INFO  (qtp224591451-57) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:46:18.889 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:46:18.904 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:18.904 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:18.909 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:46:18.909 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:18.909 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/undefined?_=1747910664867&command=show-config&indent=on&wt=json)
+2025-05-22 10:46:18.909 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:46:18.914 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:46:20.212 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:20.212 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:20.212 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:20.217 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:46:21.662 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:46:21.662 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:46:21.689 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:21.689 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747908833692&indent=true&q=*:*&q.op=OR)
+2025-05-22 10:46:21.689 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:21.689 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:21.690 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747908833692} hits=68 status=0 QTime=0
+2025-05-22 10:46:21.701 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=11
+2025-05-22 10:46:24.030 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?indent=true&q.op=OR&q=*%3A*)
+2025-05-22 10:46:24.030 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR} hits=68 status=0 QTime=0
+2025-05-22 10:46:28.487 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:28.488 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:28.491 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&numTerms=0&show=index&wt=json)
+2025-05-22 10:46:28.491 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:46:28.491 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747908824164&action=status&ts=1747908824164&wt=json)
+2025-05-22 10:46:28.491 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:28.491 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747908824217&wt=json)
+2025-05-22 10:46:28.491 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747908824164&ts=1747908824164} status=503 QTime=0
+2025-05-22 10:46:28.492 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747908824217} status=0 QTime=0
+2025-05-22 10:46:28.492 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=0
+2025-05-22 10:46:28.496 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747908824217} status=0 QTime=5
+2025-05-22 10:46:28.496 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:46:29.306 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:29.306 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:46:29.306 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:29.307 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:29.307 INFO  (qtp224591451-57) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:46:29.311 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:46:29.324 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:29.325 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:29.327 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&cat=QUERY&wt=json)
+2025-05-22 10:46:29.327 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/undefined?_=1747910664867&command=show-config&indent=on&wt=json)
+2025-05-22 10:46:29.327 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:29.328 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1747910664866} status=0 QTime=0
+2025-05-22 10:46:29.333 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:46:29.922 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:29.923 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:29.923 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:46:29.923 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:29.924 INFO  (qtp224591451-57) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=0
+2025-05-22 10:46:29.927 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:46:33.018 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:33.019 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:33.023 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:33.023 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:46:33.028 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:46:33.030 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=7
+2025-05-22 10:46:34.460 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?_=1747908824217&commitWithin=1000&overwrite=true&wt=json)
+2025-05-22 10:46:34.465 INFO  (qtp224591451-59) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1747908824217}{} 0 4
+2025-05-22 10:46:37.393 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:37.394 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:37.397 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:37.398 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&wt=json)
+2025-05-22 10:46:37.398 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1747908832048} status=0 QTime=0
+2025-05-22 10:46:37.402 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:46:37.408 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/file?_=1747908832048&file=lang&wt=json)
+2025-05-22 10:46:37.409 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1747908832048} status=0 QTime=0
+2025-05-22 10:46:38.391 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747908824164&ts=1747908824164&wt=json)
+2025-05-22 10:46:38.392 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747908824164&ts=1747908824164} hits=68 status=0 QTime=0
+2025-05-22 10:46:38.392 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747908824164&ts=1747908824164} status=0 QTime=0
+2025-05-22 10:46:42.676 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:42.676 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:42.678 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&stats=true&wt=json)
+2025-05-22 10:46:42.678 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:42.682 INFO  (qtp224591451-57) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1747910664866} status=0 QTime=3
+2025-05-22 10:46:42.683 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:46:47.012 INFO  (qtp224591451-67) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/mbeans?_=1747910664866&stats=true&wt=json)
+2025-05-22 10:46:47.015 INFO  (qtp224591451-67) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1747910664866} status=0 QTime=3
+2025-05-22 10:46:48.398 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:48.399 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:48.403 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:48.408 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:46:49.158 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:49.158 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:49.163 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:46:49.163 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:49.164 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=1
+2025-05-22 10:46:49.169 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=6
+2025-05-22 10:46:49.998 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:49.998 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:49.998 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/config?_=1747910683162&wt=json)
+2025-05-22 10:46:49.998 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&show=schema&wt=json)
+2025-05-22 10:46:49.998 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:49.998 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/config params={wt=json&_=1747910683162} status=0 QTime=0
+2025-05-22 10:46:49.999 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1747908824217} status=0 QTime=1
+2025-05-22 10:46:50.002 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:46:50.017 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747908824217&numTerms=0&wt=json)
+2025-05-22 10:46:50.021 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1747908824217} status=0 QTime=4
+2025-05-22 10:46:50.564 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:50.564 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:50.566 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:50.566 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747908824217&command=details&wt=json)
+2025-05-22 10:46:50.567 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747908824217} status=0 QTime=0
+2025-05-22 10:46:50.568 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=2
+2025-05-22 10:46:53.635 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:46:53.636 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:46:53.636 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:53.641 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:46:53.646 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:46:53.653 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=6
+2025-05-22 10:47:08.564 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:08.564 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/logging?_=1747910828561&since=0&wt=json)
+2025-05-22 10:47:08.564 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:08.564 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:08.564 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1747910828561&since=0} status=0 QTime=0
+2025-05-22 10:47:08.569 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:47:12.399 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:12.399 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:12.400 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:12.415 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=15
+2025-05-22 10:47:12.419 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:12.426 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=7
+2025-05-22 10:47:12.442 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/cluster/security/authorization params={wt=json&_=1747910832393} status=0 QTime=0
+2025-05-22 10:47:13.120 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:13.120 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&wt=json)
+2025-05-22 10:47:13.120 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:13.120 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:13.121 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1747908824164} status=0 QTime=1
+2025-05-22 10:47:13.124 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:47:13.140 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:13.141 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:13.144 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&wt=json)
+2025-05-22 10:47:13.144 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:13.146 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1747908824164} status=0 QTime=2
+2025-05-22 10:47:13.148 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=4
+2025-05-22 10:47:13.602 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/properties?_=1747910833599&wt=json)
+2025-05-22 10:47:13.602 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:13.602 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:13.602 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:13.602 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1747910833599} status=0 QTime=0
+2025-05-22 10:47:13.607 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:47:14.389 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:14.390 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:14.392 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:14.392 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&wt=json)
+2025-05-22 10:47:14.393 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1747908824164} status=0 QTime=1
+2025-05-22 10:47:14.397 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=5
+2025-05-22 10:47:14.408 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:14.409 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:14.410 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:14.410 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&wt=json)
+2025-05-22 10:47:14.413 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1747908824164} status=0 QTime=2
+2025-05-22 10:47:14.414 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=3
+2025-05-22 10:47:25.344 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&action=UNLOAD&core=nutch&wt=json)
+2025-05-22 10:47:25.344 INFO  (qtp224591451-76) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch tag=null
+2025-05-22 10:47:25.345 INFO  (qtp224591451-76) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2d8f39: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch/com.codahale.metrics.MetricRegistry@19c67f75
+2025-05-22 10:47:25.358 INFO  (qtp224591451-76) [   ] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@3dabfa0d
+2025-05-22 10:47:25.358 INFO  (qtp224591451-76) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch tag=SolrCore@3dabfa0d
+2025-05-22 10:47:25.359 INFO  (qtp224591451-76) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-05-22 10:47:25.363 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=UNLOAD&wt=json&_=1747908824164} status=0 QTime=18
+2025-05-22 10:47:25.377 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&wt=json)
+2025-05-22 10:47:25.377 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747908824164&wt=json)
+2025-05-22 10:47:25.377 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747908824164&indexInfo=false&wt=json)
+2025-05-22 10:47:25.378 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:25.378 INFO  (qtp224591451-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1747908824164} status=0 QTime=0
+2025-05-22 10:47:25.384 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747908824164} status=0 QTime=7
+2025-05-22 10:49:59.172 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-05-22 10:49:59.174 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2025-05-22 10:49:59.185 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-05-22 10:49:59.188 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2025-05-22 10:49:59.192 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?action=STATUS&core=nutch&wt=json)
+2025-05-22 10:49:59.192 INFO  (qtp224591451-61) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=STATUS&wt=json} status=0 QTime=0
+2025-05-22 10:49:59.195 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?action=CREATE&name=nutch&instanceDir=nutch&wt=json)
+2025-05-22 10:49:59.195 INFO  (qtp224591451-77) [   x:nutch] o.a.s.h.a.CoreAdminOperation core create command name=nutch&action=CREATE&instanceDir=nutch&wt=json
+2025-05-22 10:49:59.200 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-05-22 10:49:59.200 WARN  (qtp224591451-77) [   x:nutch] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-05-22 10:49:59.206 INFO  (qtp224591451-77) [   x:nutch] o.a.s.s.IndexSchema Schema name=default-config
+2025-05-22 10:49:59.209 WARN  (qtp224591451-77) [   x:nutch] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2025-05-22 10:49:59.209 WARN  (qtp224591451-77) [   x:nutch] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2025-05-22 10:49:59.209 WARN  (qtp224591451-77) [   x:nutch] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2025-05-22 10:49:59.209 WARN  (qtp224591451-77) [   x:nutch] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2025-05-22 10:49:59.209 WARN  (qtp224591451-77) [   x:nutch] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2025-05-22 10:49:59.216 INFO  (qtp224591451-77) [   x:nutch] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-05-22 10:49:59.221 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch, trusted=true
+2025-05-22 10:49:59.222 INFO  (qtp224591451-77) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f8e8a9d
+2025-05-22 10:49:59.222 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch], dataDir=[/home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/data/]
+2025-05-22 10:49:59.251 INFO  (qtp224591451-77) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-05-22 10:49:59.251 INFO  (qtp224591451-77) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-05-22 10:49:59.258 INFO  (qtp224591451-77) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-05-22 10:49:59.258 INFO  (qtp224591451-77) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-05-22 10:49:59.267 INFO  (qtp224591451-77) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/conf
+2025-05-22 10:49:59.267 INFO  (qtp224591451-77) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-05-22 10:49:59.267 INFO  (qtp224591451-77) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2025-05-22 10:49:59.268 INFO  (qtp224591451-77) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-05-22 10:49:59.272 INFO  (searcherExecutor-21-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-05-22 10:49:59.273 INFO  (searcherExecutor-21-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-05-22 10:49:59.273 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=nutch&action=CREATE&instanceDir=nutch&wt=json} status=0 QTime=78
+2025-05-22 10:49:59.274 INFO  (searcherExecutor-21-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch]  Registered new searcher autowarm time: 0 ms
+2025-05-22 10:50:47.440 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 10:50:47.712 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911047634&indexInfo=false&wt=json)
+2025-05-22 10:50:47.713 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747911047634} status=0 QTime=0
+2025-05-22 10:50:47.718 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911047634&wt=json)
+2025-05-22 10:50:47.718 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747911047634&wt=json)
+2025-05-22 10:50:47.719 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1747911047634} status=0 QTime=1
+2025-05-22 10:50:47.725 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747911047634} status=0 QTime=6
+2025-05-22 10:50:48.211 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747911047634&wt=json)
+2025-05-22 10:50:48.211 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911047634&indexInfo=false&wt=json)
+2025-05-22 10:50:48.211 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911047634&wt=json)
+2025-05-22 10:50:48.212 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747911047634} status=0 QTime=0
+2025-05-22 10:50:48.213 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1747911047634} status=0 QTime=2
+2025-05-22 10:50:48.217 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747911047634} status=0 QTime=6
+2025-05-22 10:50:49.755 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911047634&indexInfo=false&wt=json)
+2025-05-22 10:50:49.755 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747911049749&numTerms=0&show=index&wt=json)
+2025-05-22 10:50:49.755 INFO  (qtp224591451-85) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747911047634&wt=json)
+2025-05-22 10:50:49.756 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747911047634} status=0 QTime=0
+2025-05-22 10:50:49.756 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747911049749&command=details&wt=json)
+2025-05-22 10:50:49.758 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747911049749} status=0 QTime=1
+2025-05-22 10:50:49.758 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747911049749&wt=json)
+2025-05-22 10:50:49.759 INFO  (qtp224591451-74) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747911049749} status=0 QTime=3
+2025-05-22 10:50:49.760 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747911047634&action=status&ts=1747911047634&wt=json)
+2025-05-22 10:50:49.760 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747911047634&ts=1747911047634} status=503 QTime=0
+2025-05-22 10:50:49.766 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747911049749} status=0 QTime=9
+2025-05-22 10:50:49.768 INFO  (qtp224591451-85) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747911047634} status=0 QTime=12
+2025-05-22 10:50:53.240 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 10:50:53.374 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747911053369&wt=json)
+2025-05-22 10:50:53.374 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747911053344&wt=json)
+2025-05-22 10:50:53.376 INFO  (qtp224591451-83) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747911053369&numTerms=0&show=index&wt=json)
+2025-05-22 10:50:53.376 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747911053344&action=status&ts=1747911053344&wt=json)
+2025-05-22 10:50:53.377 INFO  (qtp224591451-83) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747911053369} status=0 QTime=0
+2025-05-22 10:50:53.377 INFO  (qtp224591451-85) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911053343&indexInfo=false&wt=json)
+2025-05-22 10:50:53.377 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747911053369&command=details&wt=json)
+2025-05-22 10:50:53.378 INFO  (qtp224591451-81) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747911053344&ts=1747911053344} status=503 QTime=1
+2025-05-22 10:50:53.378 INFO  (qtp224591451-85) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747911053343} status=0 QTime=0
+2025-05-22 10:50:53.378 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747911053369} status=0 QTime=0
+2025-05-22 10:50:53.380 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747911053369} status=0 QTime=6
+2025-05-22 10:50:53.380 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747911053344} status=0 QTime=5
+2025-05-22 10:50:54.276 INFO  (qtp224591451-87) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 10:50:54.508 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747911054468&action=status&ts=1747911054468&wt=json)
+2025-05-22 10:50:54.508 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747911054468&wt=json)
+2025-05-22 10:50:54.508 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747911054502&wt=json)
+2025-05-22 10:50:54.508 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747911054502&numTerms=0&show=index&wt=json)
+2025-05-22 10:50:54.508 INFO  (qtp224591451-61) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747911054502&command=details&wt=json)
+2025-05-22 10:50:54.508 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747911054468&ts=1747911054468} status=503 QTime=0
+2025-05-22 10:50:54.509 INFO  (qtp224591451-61) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747911054502} status=0 QTime=1
+2025-05-22 10:50:54.509 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911054468&indexInfo=false&wt=json)
+2025-05-22 10:50:54.509 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747911054468} status=0 QTime=0
+2025-05-22 10:50:54.510 INFO  (qtp224591451-74) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747911054502} status=0 QTime=2
+2025-05-22 10:50:54.514 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747911054468} status=0 QTime=6
+2025-05-22 10:50:54.515 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747911054502} status=0 QTime=7
+2025-05-22 10:50:55.263 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 10:50:55.668 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911055596&indexInfo=false&wt=json)
+2025-05-22 10:50:55.669 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747911055597&wt=json)
+2025-05-22 10:50:55.669 INFO  (qtp224591451-87) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747911055662&command=details&wt=json)
+2025-05-22 10:50:55.669 INFO  (qtp224591451-83) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747911055597&action=status&ts=1747911055597&wt=json)
+2025-05-22 10:50:55.669 INFO  (qtp224591451-80) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747911055662&numTerms=0&show=index&wt=json)
+2025-05-22 10:50:55.669 INFO  (qtp224591451-85) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747911055662&wt=json)
+2025-05-22 10:50:55.670 INFO  (qtp224591451-83) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747911055597&ts=1747911055597} status=503 QTime=0
+2025-05-22 10:50:55.671 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747911055596} status=0 QTime=0
+2025-05-22 10:50:55.672 INFO  (qtp224591451-87) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747911055662} status=0 QTime=2
+2025-05-22 10:50:55.672 INFO  (qtp224591451-80) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747911055662} status=0 QTime=3
+2025-05-22 10:50:55.676 INFO  (qtp224591451-85) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747911055662} status=0 QTime=6
+2025-05-22 10:50:55.676 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747911055597} status=0 QTime=7
+2025-05-22 10:55:03.280 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747911055597&ts=1747911055597&wt=json)
+2025-05-22 10:55:03.281 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747911055597&ts=1747911055597} hits=68 status=0 QTime=1
+2025-05-22 10:55:03.281 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1747911055597&ts=1747911055597} status=0 QTime=1
+2025-05-22 10:57:27.709 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-05-22 10:57:27.712 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=3
+2025-05-22 10:57:27.722 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?action=UNLOAD&core=nutch&deleteIndex=true&deleteDataDir=true&deleteInstanceDir=true&wt=json)
+2025-05-22 10:57:27.722 INFO  (qtp224591451-81) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch tag=null
+2025-05-22 10:57:27.722 INFO  (qtp224591451-81) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3e15fbfa: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch/com.codahale.metrics.MetricRegistry@5196b1e8
+2025-05-22 10:57:27.730 INFO  (qtp224591451-81) [   ] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@7d9655e4
+2025-05-22 10:57:27.730 INFO  (qtp224591451-81) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch tag=SolrCore@7d9655e4
+2025-05-22 10:57:27.731 INFO  (qtp224591451-81) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-05-22 10:57:27.747 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=nutch&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=25
+2025-05-22 10:57:48.544 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-05-22 10:57:48.546 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2025-05-22 10:57:48.555 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-05-22 10:57:48.557 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2025-05-22 10:57:48.561 INFO  (qtp224591451-83) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?action=STATUS&core=nutch&wt=json)
+2025-05-22 10:57:48.561 INFO  (qtp224591451-83) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=STATUS&wt=json} status=0 QTime=0
+2025-05-22 10:57:48.572 INFO  (qtp224591451-91) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?action=CREATE&name=nutch&instanceDir=nutch&wt=json)
+2025-05-22 10:57:48.572 INFO  (qtp224591451-91) [   x:nutch] o.a.s.h.a.CoreAdminOperation core create command name=nutch&action=CREATE&instanceDir=nutch&wt=json
+2025-05-22 10:57:48.578 INFO  (qtp224591451-91) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-05-22 10:57:48.578 WARN  (qtp224591451-91) [   x:nutch] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-05-22 10:57:48.583 INFO  (qtp224591451-91) [   x:nutch] o.a.s.s.IndexSchema Schema name=default-config
+2025-05-22 10:57:48.592 INFO  (qtp224591451-91) [   x:nutch] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-05-22 10:57:48.597 INFO  (qtp224591451-91) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch, trusted=true
+2025-05-22 10:57:48.597 INFO  (qtp224591451-91) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f8e8a9d
+2025-05-22 10:57:48.597 INFO  (qtp224591451-91) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch], dataDir=[/home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/data/]
+2025-05-22 10:57:48.643 INFO  (qtp224591451-91) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-05-22 10:57:48.643 INFO  (qtp224591451-91) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-05-22 10:57:48.644 INFO  (qtp224591451-91) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-05-22 10:57:48.644 INFO  (qtp224591451-91) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-05-22 10:57:48.646 INFO  (qtp224591451-91) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/conf
+2025-05-22 10:57:48.646 INFO  (qtp224591451-91) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-05-22 10:57:48.647 INFO  (qtp224591451-91) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2025-05-22 10:57:48.647 INFO  (qtp224591451-91) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-05-22 10:57:48.647 INFO  (qtp224591451-91) [   x:nutch] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1832818016147996672
+2025-05-22 10:57:48.648 INFO  (searcherExecutor-27-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-05-22 10:57:48.648 INFO  (searcherExecutor-27-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-05-22 10:57:48.649 INFO  (qtp224591451-91) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=nutch&action=CREATE&instanceDir=nutch&wt=json} status=0 QTime=76
+2025-05-22 10:57:48.650 INFO  (searcherExecutor-27-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch]  Registered new searcher autowarm time: 0 ms
+2025-05-22 10:57:52.925 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 10:57:53.140 INFO  (qtp224591451-93) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747911473096&indexInfo=false&wt=json)
+2025-05-22 10:57:53.141 INFO  (qtp224591451-93) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747911473096} status=0 QTime=0
+2025-05-22 10:57:53.146 INFO  (qtp224591451-91) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747911473096&action=status&ts=1747911473096&wt=json)
+2025-05-22 10:57:53.146 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747911473136&command=details&wt=json)
+2025-05-22 10:57:53.147 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747911473136} status=0 QTime=0
+2025-05-22 10:57:53.149 INFO  (qtp224591451-91) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747911473096&ts=1747911473096} status=503 QTime=2
+2025-05-22 10:57:53.150 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747911473096&wt=json)
+2025-05-22 10:57:53.150 INFO  (qtp224591451-88) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747911473136&wt=json)
+2025-05-22 10:57:53.152 INFO  (qtp224591451-94) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747911473135&numTerms=0&show=index&wt=json)
+2025-05-22 10:57:53.153 INFO  (qtp224591451-94) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747911473135} status=0 QTime=0
+2025-05-22 10:57:53.157 INFO  (qtp224591451-81) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747911473096} status=0 QTime=7
+2025-05-22 10:57:53.159 INFO  (qtp224591451-88) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747911473136} status=0 QTime=9
+2025-05-22 11:20:21.130 INFO  (qtp224591451-100) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?wt=javabin&version=2)
+2025-05-22 11:20:21.194 INFO  (qtp224591451-100) [   x:nutch] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/conf/managed-schema
+2025-05-22 11:20:21.411 INFO  (qtp224591451-100) [   x:nutch] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /home/sumukh-paspuleti/solr-8.11.4/server/solr/nutch/conf/managed-schema
+2025-05-22 11:20:21.838 INFO  (qtp224591451-100) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[http://gmpg.org/xfn/11 (1832819434412048384), https://administrativeservices.gatech.edu/ (1832819434415194112), https://admission.gatech.edu/ (1832819434415194113), https://admission.gatech.edu/visit/ (1832819434416242688), https://advising.gatech.edu/ (1832819434417291264), https://af.gatech.edu/ (1832819434418339840), https://aialoe.org/ (1832819434419388416), https://application.gatech.edu/portal/academic_sessions (1832819434420436992), https://application.gatech.edu/portal/academic_sessions_webinars (1832819434421485568), https://arts.gatech.edu/ (1832819434421485569), ... (788 adds)]} 0 707
+2025-05-22 11:20:21.848 INFO  (qtp224591451-93) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 11:20:22.356 INFO  (searcherExecutor-27-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-05-22 11:20:22.358 INFO  (searcherExecutor-27-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch]  Registered new searcher autowarm time: 0 ms
+2025-05-22 11:20:22.359 INFO  (qtp224591451-93) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 510
+2025-05-22 11:20:22.360 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 11:20:22.361 INFO  (qtp224591451-36) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 0
+2025-05-22 11:21:49.116 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 11:21:49.360 INFO  (qtp224591451-93) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747912909291&indexInfo=false&wt=json)
+2025-05-22 11:21:49.361 INFO  (qtp224591451-93) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747912909291} status=0 QTime=0
+2025-05-22 11:21:49.362 INFO  (qtp224591451-77) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747912909355&numTerms=0&show=index&wt=json)
+2025-05-22 11:21:49.362 INFO  (qtp224591451-83) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747912909355&command=details&wt=json)
+2025-05-22 11:21:49.362 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747912909355&wt=json)
+2025-05-22 11:21:49.362 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747912909291&wt=json)
+2025-05-22 11:21:49.363 INFO  (qtp224591451-83) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747912909355} status=0 QTime=1
+2025-05-22 11:21:49.363 INFO  (qtp224591451-77) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747912909355} status=0 QTime=1
+2025-05-22 11:21:49.363 INFO  (qtp224591451-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747912909291&action=status&ts=1747912909291&wt=json)
+2025-05-22 11:21:49.363 INFO  (qtp224591451-36) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747912909291&ts=1747912909291} status=503 QTime=0
+2025-05-22 11:21:49.366 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747912909355} status=0 QTime=3
+2025-05-22 11:21:49.369 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747912909291} status=0 QTime=7
+2025-05-22 11:22:07.769 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747912909291&wt=json)
+2025-05-22 11:22:07.769 INFO  (qtp224591451-88) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747912909291&indexInfo=false&wt=json)
+2025-05-22 11:22:07.770 INFO  (qtp224591451-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747912909291} status=0 QTime=0
+2025-05-22 11:22:07.773 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747912909291} status=0 QTime=3
+2025-05-22 11:22:09.609 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747912927758&indent=true&q=*:*&q.op=OR)
+2025-05-22 11:22:09.610 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747912927758} hits=788 status=0 QTime=0
+2025-05-22 11:22:09.637 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747912909291&indexInfo=false&wt=json)
+2025-05-22 11:22:09.637 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747912909291} status=0 QTime=0
+2025-05-22 11:22:09.638 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747912909291&wt=json)
+2025-05-22 11:22:09.639 INFO  (qtp224591451-105) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747912927758&indent=true&q=*:*&q.op=OR)
+2025-05-22 11:22:09.640 INFO  (qtp224591451-105) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747912927758} hits=788 status=0 QTime=0
+2025-05-22 11:22:09.642 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747912909291} status=0 QTime=4
+2025-05-22 12:02:42.113 INFO  (qtp224591451-108) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?wt=javabin&version=2)
+2025-05-22 12:02:42.691 INFO  (qtp224591451-108) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[http://chaozhang.org/ (1832822098746146816), http://georgiambdabusinesscenter.org/ (1832822098755584000), http://gmpg.org/xfn/ (1832822098756632576), http://gmpg.org/xfn/11 (1832822098758729728), http://gmpg.org/xfn/faq (1832822098759778304), http://gmpg.org/xfn/intro (1832822098760826880), http://gmpg.org/xfn/thanks (1832822098762924032), http://oshainfo.gatech.edu/ (1832822098763972608), http://tantek.com/ (1832822098775506944), http://www.munmund.net/ (1832822098782846976), ... (1000 adds)]} 0 577
+2025-05-22 12:02:43.090 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?wt=javabin&version=2)
+2025-05-22 12:02:43.705 INFO  (qtp224591451-59) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://library.gatech.edu/study-spaces (1832822099768508416), https://library.gatech.edu/teaching-studio (1832822099769556992), https://library.gatech.edu/themes/custom/gtl_theme/dist/assets/georgia-tech-library-logo.svg (1832822099771654144), https://library.gatech.edu/undergrads (1832822099772702720), https://library.gatech.edu/vizlab (1832822099773751296), https://licensing.research.gatech.edu/ (1832822099776897024), https://lifetimelearning.gatech.edu/ (1832822099777945600), https://lifetimelearning.gatech.edu/college (1832822099778994176), https://lifetimelearning.gatech.edu/contact-0 (1832822099780042752), https://lifetimelearning.gatech.edu/events/symposium (1832822099781091328), ... (1000 adds)]} 0 615
+2025-05-22 12:02:43.786 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?wt=javabin&version=2)
+2025-05-22 12:02:43.917 INFO  (qtp224591451-74) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://www.cc.gatech.edu/people/robert-dixon-ece-77 (1832822100498317312), https://www.cc.gatech.edu/people/s (1832822100499365888), https://www.cc.gatech.edu/people/shaowen-bardzell (1832822100500414464), https://www.cc.gatech.edu/people/shenyu-xu (1832822100500414465), https://www.cc.gatech.edu/people/siddhartha-banerjee (1832822100501463040), https://www.cc.gatech.edu/people/srinivas-aluru (1832822100501463041), https://www.cc.gatech.edu/people/staff (1832822100501463042), https://www.cc.gatech.edu/people/staff/a (1832822100502511616), https://www.cc.gatech.edu/people/staff/b (1832822100502511617), https://www.cc.gatech.edu/people/staff/c (1832822100502511618), ... (298 adds)]} 0 130
+2025-05-22 12:02:43.920 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 12:02:44.475 INFO  (searcherExecutor-27-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-05-22 12:02:44.477 INFO  (searcherExecutor-27-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch]  Registered new searcher autowarm time: 0 ms
+2025-05-22 12:02:44.480 INFO  (qtp224591451-59) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 560
+2025-05-22 12:02:44.482 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/update?null)
+2025-05-22 12:02:44.482 INFO  (qtp224591451-74) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 0
+2025-05-22 12:04:16.178 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-05-22 12:04:16.435 INFO  (qtp224591451-100) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747915456416&indent=true&q=*:*&q.op=OR)
+2025-05-22 12:04:16.435 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747915456354&indexInfo=false&wt=json)
+2025-05-22 12:04:16.435 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747915456355&wt=json)
+2025-05-22 12:04:16.436 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747915456354} status=0 QTime=0
+2025-05-22 12:04:16.436 INFO  (qtp224591451-100) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747915456416} hits=2298 status=0 QTime=1
+2025-05-22 12:04:16.439 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747915456355} status=0 QTime=4
+2025-05-22 12:04:17.972 INFO  (qtp224591451-108) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747915456354&indexInfo=false&wt=json)
+2025-05-22 12:04:17.973 INFO  (qtp224591451-108) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747915456354} status=0 QTime=0
+2025-05-22 12:04:17.973 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/luke?_=1747915457967&numTerms=0&show=index&wt=json)
+2025-05-22 12:04:17.973 INFO  (qtp224591451-83) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747915456355&wt=json)
+2025-05-22 12:04:17.973 INFO  (qtp224591451-76) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/replication?_=1747915457967&command=details&wt=json)
+2025-05-22 12:04:17.974 INFO  (qtp224591451-59) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1747915457967} status=0 QTime=0
+2025-05-22 12:04:17.974 INFO  (qtp224591451-76) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1747915457967} status=0 QTime=0
+2025-05-22 12:04:17.974 INFO  (qtp224591451-121) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/system?_=1747915457967&wt=json)
+2025-05-22 12:04:17.975 INFO  (qtp224591451-74) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/admin/ping?_=1747915456355&action=status&ts=1747915456355&wt=json)
+2025-05-22 12:04:17.976 INFO  (qtp224591451-74) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1747915456355&ts=1747915456355} status=503 QTime=0
+2025-05-22 12:04:17.979 INFO  (qtp224591451-121) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1747915457967} status=0 QTime=5
+2025-05-22 12:04:17.979 INFO  (qtp224591451-83) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747915456355} status=0 QTime=6
+2025-05-22 12:07:25.281 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747915456354&indexInfo=false&wt=json)
+2025-05-22 12:07:25.282 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747915456354} status=0 QTime=0
+2025-05-22 12:07:25.285 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747915456355&wt=json)
+2025-05-22 12:07:25.290 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747915456355} status=0 QTime=4
+2025-05-22 12:07:29.660 INFO  (qtp224591451-103) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747915456416&indent=true&q=*:*&q.op=OR)
+2025-05-22 12:07:29.661 INFO  (qtp224591451-103) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747915456416} hits=2298 status=0 QTime=0
+2025-05-22 12:07:29.698 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1747915456354&indexInfo=false&wt=json)
+2025-05-22 12:07:29.698 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1747915456355&wt=json)
+2025-05-22 12:07:29.698 INFO  (qtp224591451-100) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/nutch/select?_=1747915456416&indent=true&q=*:*&q.op=OR)
+2025-05-22 12:07:29.699 INFO  (qtp224591451-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1747915456354} status=0 QTime=0
+2025-05-22 12:07:29.699 INFO  (qtp224591451-100) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1747915456416} hits=2298 status=0 QTime=0
+2025-05-22 12:07:29.701 INFO  (qtp224591451-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1747915456355} status=0 QTime=3

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.0",
+    "@floating-ui/vue": "^1.1.6",
+    "bootstrap": "^5.3.6",
+    "portal-vue": "^3.0.0-beta.0"
+  }
+}
